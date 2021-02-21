@@ -1,0 +1,12 @@
+version: "2"
+containers:
+- name: shell
+  image: alpine
+  shell: /usr/bin/sshpass -p 'Passw0rd!' ssh -o 'StrictHostKeyChecking=no' instruqt@windows
+  environment:
+    SSHPASS: Passw0rd!
+  memory: 64
+virtualmachines:
+- name: windows
+  image: instruqt/windows-server
+  machine_type: n1-standard-2

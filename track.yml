@@ -1,0 +1,60 @@
+slug: windows-desktop
+id: 8to3xq5gybnz
+type: sandbox
+title: Windows virtual desktop
+teaser: Access a Windows virtual desktop, right from your browser
+description: |
+  Playgrounds are great for experimenting and trying new functionality,
+  right from your browser.
+
+  Using Instruqt you can run many different types of sanbox
+  environments, even Windows virtual desktops.
+
+  ![Windows Desktop](https://cdn.instruqt.com/assets/free-trial/windows-10-desktop.jpg)
+
+  We've prepered a sandbox environment for you, so you can play around and experiment with
+  your own Windows virtual desktop environment.
+icon: https://cdn.instruqt.com/assets/free-trial/windows.png
+level: beginner
+tags:
+- windows
+- virtual desktop
+owner: instruqt
+developers:
+- niels@instruqt.com
+- ade@instruqt.com
+private: true
+published: true
+show_timer: true
+challenges:
+- slug: sandbox
+  id: icck99npjw3e
+  type: challenge
+  title: Virtual Windows Desktop
+  teaser: Access a Windows desktop right from your browser
+  assignment: |
+    Welcome to your Windows Desktop.
+
+    The sandbox environment on the left shows two tabs. The first has an RDP session, and the second shows an interactive PowerShell console.
+  notes:
+  - type: text
+    contents: |
+      This sandbox environment shows how to interact with a Windows Desktop
+      environment.
+  - type: text
+    contents: |
+      Please wait while we start your Windows Desktop.
+
+      ![Windows Desktop](https://cdn.instruqt.com/assets/free-trial/windows-10-desktop.jpg)
+  tabs:
+  - title: RDP
+    type: service
+    hostname: windows
+    path: /Myrtille/?__EVENTTARGET=&__EVENTARGUMENT=&user=instruqt&password=Passw0rd%21&connect=Connect%21
+    port: 80
+  - title: PowerShell
+    type: terminal
+    hostname: shell
+  difficulty: basic
+  timelimit: 7200
+checksum: "11912431577169752790"
