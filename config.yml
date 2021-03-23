@@ -1,11 +1,14 @@
 version: "2"
 containers:
-- name: shell
-  image: alpine
-  shell: /usr/bin/sshpass -p 'Passw0rd!' ssh -o 'StrictHostKeyChecking=no' instruqt@windows
-  environment:
-    SSHPASS: Passw0rd!
-  memory: 64
+- name: guac
+  image: gcr.io/instruqt/guacamole
+  shell: /bin/bash
+  ports:
+  - 8080
+- name: powershell
+  image: mcr.microsoft.com/powershell
+  shell: /opt/microsoft/powershell/7/pwsh
+  memory: 512
 virtualmachines:
 - name: windows
   image: instruqt/windows-server

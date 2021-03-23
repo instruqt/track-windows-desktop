@@ -7,7 +7,7 @@ description: |
   Playgrounds are great for experimenting and trying new functionality,
   right from your browser.
 
-  Using Instruqt you can run many different types of sanbox
+  Using Instruqt you can run many different types of sandbox
   environments, even Windows virtual desktops.
 
   ![Windows Desktop](https://cdn.instruqt.com/assets/free-trial/windows-10-desktop.jpg)
@@ -23,7 +23,7 @@ owner: instruqt
 developers:
 - niels@instruqt.com
 - ade@instruqt.com
-private: true
+private: false
 published: true
 show_timer: true
 challenges:
@@ -49,12 +49,12 @@ challenges:
   tabs:
   - title: RDP
     type: service
-    hostname: windows
-    path: /Myrtille/?__EVENTTARGET=&__EVENTARGUMENT=&user=instruqt&password=Passw0rd%21&connect=Connect%21
-    port: 80
+    hostname: guac
+    path: /#/client/c/windows?username=instruqt&password=Passw0rd!
+    port: 8080
   - title: PowerShell
     type: terminal
-    hostname: shell
+    hostname: powershell
   difficulty: basic
   timelimit: 7200
-checksum: "11912431577169752790"
+checksum: "6258310264037720335"
