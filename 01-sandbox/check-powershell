@@ -1,0 +1,23 @@
+#!/opt/microsoft/powershell/7/pwsh
+
+$ErrorActionPreference = "Stop"
+$sshCredentials = @{
+  Username = "instruqt"
+  KeyFilePath = "/root/.ssh/id_rsa"
+}
+
+$checkScript = {
+  if ( !(Test-Path -Path "C:\Users\instruqt\Desktop\check.txt" )) {
+    Write-Output "FAIL: Please create a check.txt file on the Desktop"
+    exit 1
+  }
+
+  Write-Output "C:\Users\instruqt\Desktop\check.txt exists"
+  exit 0
+}
+
+$result = Invoke-Command @sshCredentials -Hostname "windows" -ScriptBlock $checkScript
+Write-Output $result
+if ($result.StartsWith("FAIL: ")) {
+  exit 1
+}
