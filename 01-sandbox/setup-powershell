@@ -1,9 +1,0 @@
-#!/opt/microsoft/powershell/7/pwsh
-
-$ErrorActionPreference = "Stop"
-
-while (!(Test-Connection "windows" -TcpPort 22)) {
-  Write-Output "Waiting for ssh windows"
-  sleep 1
-}
-ssh-keyscan windows >> /root/.ssh/known_hosts

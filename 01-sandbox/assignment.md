@@ -22,18 +22,14 @@ tabs:
   port: 8080
 - title: PowerShell
   type: terminal
-  hostname: powershell
-- title: Example
-  type: service
   hostname: windows
-  port: 8080
 - title: editor
   type: code
-  hostname: guac
+  hostname: windows
   path: C:\Users\instruqt\Documents
 difficulty: basic
-timelimit: 6000
+timelimit: 600
 ---
 Welcome to your Windows Desktop.
 
-The sandbox environment on the left shows two tabs. The first has an RDP session, and the second shows an interactive PowerShell console.
+The sandbox environment on the left shows three tabs. The first has an RDP session, the second shows an interactive PowerShell console, and the third has a code editor.

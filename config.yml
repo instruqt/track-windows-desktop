@@ -5,10 +5,6 @@ containers:
   shell: /bin/bash
   ports:
   - 8080
-- name: powershell
-  image: mcr.microsoft.com/powershell
-  shell: /opt/microsoft/powershell/7/pwsh
-  memory: 512
 virtualmachines:
 - name: windows
   image: instruqt/windows-server

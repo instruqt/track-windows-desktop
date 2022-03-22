@@ -1,0 +1,4 @@
+$ErrorActionPreference = "Stop"
+
+
+New-Item -Path "C:\Users\instruqt\Desktop\check.txt" -ItemType "file" -Force
