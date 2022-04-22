@@ -6,6 +6,14 @@ title: Virtual Windows Desktop
 teaser: Access a Windows desktop right from your browser
 notes:
 - type: text
+  contents: "# Hello, Welcome to Instruqt \U0001F44B\n\nIn this track, we've prepared
+    a sandbox environment so you can play around and experiment with your own Windows
+    virtual desktop environment.\n\n\n\U0001F39B️ Instruqt tracks are self-contained
+    virtual sandbox environments where you have full control over the configuration
+    and setup.\n\n\U0001F4BB Users can access your demo from any web browser.\n\n☁️
+    Shared cloud accounts are a thing of the past. With Instruqt temporary accounts,
+    you can leave the cleanup to us.\n"
+- type: text
   contents: |
     This sandbox environment shows how to interact with a Windows Desktop
     environment.
@@ -28,7 +36,7 @@ tabs:
   hostname: windows
   path: C:\Users\instruqt\Documents
 difficulty: basic
-timelimit: 600
+timelimit: 300
 ---
 Welcome to your Windows Desktop.
 
