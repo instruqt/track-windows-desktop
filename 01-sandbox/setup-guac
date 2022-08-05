@@ -13,6 +13,7 @@ cat <<'EOF' > /config/guacamole/user-mapping.xml
             <param name="password">Passw0rd!</param>
             <param name="ignore-cert">true</param>
             <param name="resize-method">display-update</param>
+            <param name="enable-font-smoothing">true</param>
         </connection>
     </authorize>
 </user-mapping>
